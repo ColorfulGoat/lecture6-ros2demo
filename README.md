@@ -4,6 +4,8 @@
 
 Complete ROS2 Humble development environment with TurtleBot3 Burger simulation in Gazebo Classic, packaged as a VS Code Dev Container for cross-platform robotics development.
 
+> **Apple Silicon (M1/M2/M3) users:** Gazebo Classic 11 does not have arm64 packages for Ubuntu 22.04, and Gazebo Sim crashes in Docker on Apple Silicon due to lack of GPU passthrough. This means **Gazebo simulation will not work** on Apple Silicon Macs. Everything else (RViz, Nav2, SLAM, teleop, ROS2 tooling) works normally. For full simulation support, use an Intel/AMD machine or a cloud VM.
+
 ---
 
 ## Table of Contents
