@@ -105,9 +105,17 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
-> Screenshot: Both nodes running (circle_motion on **2nd terminal** and odom_monitor on **3rd terminal**)
+> Screenshot: Both nodes running (*circle_motion on* **2nd terminal** and *odom_monitor* on **3rd terminal**)
 
-[i5](/images/Screenshot10.png)
+![i5](/images/Screenshot10.png)
+
+> Screenshot: **ros2 node list**
+
+![i6](/images/Screenshot11.png)
+
+> Explain: How does pub-sub decoupling work? (3 sentences)
+> --------
+> Publishers and subscribers only communicate through topics. They are "isolated" from one another, which is why they can be started or stopped independently without affecting the rest of the system.
 
 
 
