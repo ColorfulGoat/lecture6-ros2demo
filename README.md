@@ -50,10 +50,14 @@ if __name__ == '__main__':
 ```
 >Robot moving in circles
 
-| Robot motion | bla |
+| Robot motion | in circles |
 |--------|---------|
 | ![i1](/images/Screenshot7.png) | ![i2](/images/Screenshot6.png) |
 | ![i3](/images/Screenshot9.png) | ![i4](/images/Screenshot5.png) |
+
+>Explain: Why use create_timer()?
+>-------------
+>We use create_timer because we want to ensure that the velocity commands are published every 0.1 seconds (10Hz). Without it, the publishing speed would depend on the CPU load, making it unstable.
 
 
 
