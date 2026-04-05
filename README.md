@@ -59,10 +59,55 @@ if __name__ == '__main__':
 >-------------
 >We use create_timer because we want to ensure that the velocity commands are published every 0.1 seconds (10Hz). Without it, the publishing speed would depend on the CPU load, making it unstable.
 
+- ### Aufgabe 1,b)
+> Python code: odom_monitor.py
 
+``` python
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+from nav_msgs.msg import Odometry
 
+class OdomMonitor(Node):
+    def __init__(self):
+        super().__init__('odom_monitor')
+        
+        # Create subscriber: message type, topic name, callback function, queue size
+        self.subscription = self.create_subscription(
+            Odometry,               # Message type
+            '/odom',                # Topic name
+            self.odometry_callback, # Callback function
+            10                      # Queue size
+        )
+        
+        self.get_logger().info('Odometry Monitor started!')
+    
+    def odometry_callback(self, msg):
+        # Extract position
+        x = msg.pose.pose.position.x
+        y = msg.pose.pose.position.y
+        z = msg.pose.pose.position.z
+        
+        # Extract linear velocity
+        vx = msg.twist.twist.linear.x
+        vz = msg.twist.twist.angular.z
+        
+        self.get_logger().info(
+            f'Position: x={x:.2f}, y={y:.2f} | Velocity: vx={vx:.2f}, vz={vz:.2f}'
+        )
 
+def main(args=None):
+    rclpy.init(args=args)
+    node = OdomMonitor()
+    rclpy.spin(node)
+    rclpy.shutdown()
 
+if __name__ == '__main__':
+    main()
+```
+> Screenshot: Both nodes running (circle_motion on **2nd terminal** and odom_monitor on **3rd terminal**)
+
+[i5](/images/Screenshot10.png)
 
 
 
