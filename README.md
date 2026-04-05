@@ -1,6 +1,7 @@
 # Lecture 6: ROS 2 Concepts & Building Software Packages
 ## Name: Iason Katsikis, ID: 25-119-710, ROS2 version: Humble
 > ## [Github link to my fork](https://github.com/ColorfulGoat/lecture6-ros2demo)
+> Let me know if I missed something :relaxed:
 
 ---
 
