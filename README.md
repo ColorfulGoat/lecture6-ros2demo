@@ -167,5 +167,5 @@ running? List them.
 
 >Answer: What happens if you stop the circle_motion node? Does odom_monitor still work? Why?
 >-----------------------
->Yes, odom_monitor continues to work because pub-sub is fully decoupled — the subscriber doesn't care whether the publisher is alive. The TurtleBot3 node still publishes to /odom (just with zero velocity), so odom_monitor keeps receiving messages.
+>Yes, odom_monitor continues to work because pub-sub is fully decoupled, the subscriber doesn't check/depend if the publisher is running or not. The TurtleBot3 node still publishes to /odom (with zero velocity), so odom_monitor keeps receiving messages.
 
