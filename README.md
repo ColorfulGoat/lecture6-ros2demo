@@ -6,7 +6,7 @@
 ---
 
 - ### Aufgabe 1,a)
->Terminal Screenshot of package structure
+>Screenshot of package structure
 
 ![Terminal Screenshot](/images/Screenshot2.png)
 
@@ -67,6 +67,10 @@ if __name__ == '__main__':
 ---
 
 - ### Aufgabe 1,b)
+>Screenshot of package structure after creating the odom_monitor.py file
+
+![Terminal Screenshot](/images/Screenshot16.png)
+
 > Python code: odom_monitor.py
 
 ``` python
