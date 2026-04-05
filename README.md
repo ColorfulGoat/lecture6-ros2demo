@@ -1,4 +1,18 @@
 # Lecture 6: ROS 2 Concepts & Building Software Packages
+## Name: Iason Katsikis, ID: 25-119-710, ROS2 version: Humble
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 https://github.com/user-attachments/assets/8124b78b-d82c-4339-b1e3-97d4fc210e88
