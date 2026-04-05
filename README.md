@@ -1,6 +1,6 @@
 # Lecture 6: ROS 2 Concepts & Building Software Packages
 ## Name: Iason Katsikis, ID: 25-119-710, ROS2 version: Humble
-### -Aufgabe 1,a)
+### - Aufgabe 1,a)
 >Terminal Screenshot of package structure
 
 ![Terminal Screenshot](/images/Screenshot2.png)
