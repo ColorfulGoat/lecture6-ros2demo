@@ -62,6 +62,8 @@ if __name__ == '__main__':
 >-------------
 >We use create_timer because we want to ensure that the velocity commands are published every 0.1 seconds (10Hz). Without it, the publishing speed would depend on the CPU load, making it unstable.
 
+---
+
 - ### Aufgabe 1,b)
 > Python code: odom_monitor.py
 
@@ -120,6 +122,8 @@ if __name__ == '__main__':
 > --------
 > Publishers and subscribers only communicate through topics. They are "isolated" from one another, which is why they can be started or stopped independently without affecting the rest of the system.
 
+---
+
 - ### Aufgabe 2,a)
 > Screenshot: **ros2 topic list**
 
@@ -149,6 +153,8 @@ running? List them.
 >Answer: What’s the difference between ros2 topic hz and ros2 topic bw?
 >---------------------
 > **ros2 topic hz** meaasures the frequency of published messages and **ros2 topic bw** measures the bandwidth (data throughput)
+
+---
 
 - ### Aufgabe 2,b)
 > Screenshot: **rqt_graph**
