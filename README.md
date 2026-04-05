@@ -50,8 +50,8 @@ if __name__ == '__main__':
 ```
 >Robot moving in circles
 
-| Robot motion |  |
-|--------||
+| Robot motion | bla |
+|--------|---------|
 | ![i1](/images/Screenshot7.png) | ![i2](/images/Screenshot6.png) |
 | ![i3](/images/Screenshot9.png) | ![i4](/images/Screenshot5.png) |
 
