@@ -15,7 +15,6 @@
 
 
 
-https://github.com/user-attachments/assets/8124b78b-d82c-4339-b1e3-97d4fc210e88
 
 
 > DevOps for Cyber-Physical Systems | University of Bern
