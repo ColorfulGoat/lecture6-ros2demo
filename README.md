@@ -134,4 +134,29 @@ if __name__ == '__main__':
 
 ![i10](/images/Screenshot15.png)
 
+>Answer: What is /odom frequency? Why does frequency matter for robot control?
+>---------------------
+>It is the frequency that it uses to publish. The frequency is really important because the robot control loops depend on it, if it is too low then the robot cannot get timely position updates which can cause problems.
+
+>Answer: How many publishers and subscribers does /cmd_vel have when your nodes are
+running? List them.
+>---------------------
+>We have 1 publisher (circle_motion) and 1 subscriber (the turtlebot3 simulation node that is listening for velocity commands)
+
+>Answer: What’s the difference between ros2 topic hz and ros2 topic bw?
+>---------------------
+> **ros2 topic hz** meaasures the frequency of published messages and **ros2 topic bw** measures the bandwidth (data throughput)
+
+- ### Aufgabe 2,b)
+> Screenshot: **rqt_graph**
+
+![i11](/images/Screenshot17.png)
+
+>Explain: What does the graph show? How are nodes connected?
+>----------------------
+>The graph shows /circle_motion publishing velocity commands to /cmd_vel, which the TurtleBot3 simulation node consumes to drive the robot. The simulation node then publishes odometry data to /odom, which /odom_monitor subscribes to for logging.
+
+>Answer: What happens if you stop the circle_motion node? Does odom_monitor still work? Why?
+>-----------------------
+>Yes, odom_monitor continues to work because pub-sub is fully decoupled — the subscriber doesn't care whether the publisher is alive. The TurtleBot3 node still publishes to /odom (just with zero velocity), so odom_monitor keeps receiving messages.
 
